@@ -14,7 +14,7 @@ export default {
       }
     },
     backgroundImage:{
-      'hero':"url('./src/assets/dolares.avif')",
+      'hero':"url('./src/assets/dolares.png')",
     }
   },
   plugins: [],
