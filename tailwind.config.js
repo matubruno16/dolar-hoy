@@ -1,21 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors:{
-        'gris': '#bac3d0',
-        'purple': '#3A1D87',
-        'purple-dark': '#12092A',
-
-      }
+      colors: {
+        primario: "#1d1c1c",
+        secundario: "#3b3c3d",
+        divisa: "#26A69A",
+        background: "#fffefb",
+      },
     },
-    backgroundImage:{
-      'hero':"url('./src/assets/dolares.png')",
-    }
+    backgroundImage: {
+      hero: "url('./src/assets/dolares.png')",
+      divisa: "linear-gradient(90deg, #d4eaf7 0%, #b6ccd8 100%);",
+    },
   },
   plugins: [],
-}
+};

@@ -1,7 +1,9 @@
-
+import logoDolarHoy from "../assets/logoDolarHoy.png"
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <img src={logoDolarHoy} alt="" />
+    </footer>
   )
 }

@@ -1,5 +1,5 @@
 
-export const IconMenu = ({handleMenuClick}) => {
+export const IconMenu = ({ handleMenuClick }) => {
   return (
     <svg
       onClick={handleMenuClick}
@@ -8,7 +8,7 @@ export const IconMenu = ({handleMenuClick}) => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-10 h-10 cursor-pointer text-white lg:hidden"
+      className="w-10 h-10 cursor-pointer text-black lg:hidden"
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
     </svg>

@@ -14,17 +14,15 @@ export function useFetchEuro(url) {
           throw new Error(`Error: ${response.status}`);
         }
         const dataE = await response.json();
-        setData(dataE);        
-        
+        setData(dataE);
       } catch (error) {
         setError(error.message);
       } finally {
         setLoading(false);
       }
     };
-    
-    fetchData();
 
+    fetchData();
   }, [url]);
   const bancoNacion = dataE && dataE.length >= 11 ? dataE[11] : null;
   if (error) {
