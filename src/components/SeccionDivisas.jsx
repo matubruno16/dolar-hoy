@@ -8,7 +8,7 @@ export const SeccionDivisas = () => {
   const numColsInXL = (data && data.length ) % 2 === 0 ? 3 : 2;
   
   return (
-    <main className="w-[80%] max-w-[1440px] mx-auto lg:pt-10 text-pretty ">
+    <main className="w-[80%] max-w-[1440px] mx-auto text-pretty ">
       <h2 className="flex text-3xl font-extrabold lg:text-4xl py-6 justify-center text-center text-transparent bg-clip-text bg-textHeading ">Cotización del dólar hoy</h2>
     
 
