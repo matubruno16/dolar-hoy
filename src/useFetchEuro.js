@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export function useFetchEuro(url) {
   const [dataE, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loadingE, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -24,10 +24,10 @@ export function useFetchEuro(url) {
 
     fetchData();
   }, [url]);
-  const bancoNacion = dataE && dataE.length >= 11 ? dataE[11] : null;
+ 
   if (error) {
-    return { dataE: null, loading: false, error };
+    return { dataE: null, loadingE: false, error };
   }
 
-  return { dataE, loading, error: null, bancoNacion };
+  return { dataE, loadingE, error: null };
 }

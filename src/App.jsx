@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
-    <main className=" min-h-dvh min-w-full ">
+    <main className=" min-h-dvh min-w-full bg-[#EEF5FF]">
     <SpeedInsights/>
     <Analytics />
     <h1 className="hidden">

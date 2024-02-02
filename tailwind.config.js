@@ -13,6 +13,7 @@ export default {
     backgroundImage: {
       hero: "url('./src/assets/dolares.png')",
       divisa: "linear-gradient(90deg, #d4eaf7 0%, #b6ccd8 100%);",
+      textHeading: "linear-gradient(90deg, rgb(22 163 74) 0%, rgb(56 189 248) 100%);",
     },
   },
   plugins: [],

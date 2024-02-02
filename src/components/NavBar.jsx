@@ -20,23 +20,26 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`flex w-screen p-3 md:justify-center justify-start bg-divisa backdrop-blur-sm  ${!isMenuOpen ? "pl-6 pt-6" : " fixed h-full w-full  bg-divisa flex flex-col justify-start pl-6 pt-6 "}`}
+      className={`  ${!isMenuOpen ? "flex w-screen p-3 justify-between md:justify-around bg-divisa backdrop-blur-sm items-center justify-items-center px-6 pl-6 " : " fixed h-full w-full  bg-divisa flex flex-col justify-start pl-6 pt-6"}`}
     >
 
       <a 
+        className={`${isMenuOpen ? "hidden" : ""} `}       
         title="Dolar Hoy- Cotizaciones del dia. Dolar / Euro"
         href="/">
           <img
             src={logoDolarHoy}
             alt="Icono Dolar Hoy"
-            width={100}
+            width={85}
+            height={40}
           />
 
       </a>
+      <div className={`${isMenuOpen ? "flex md:hidden pb-10" : "md:hidden"}`}>
 
-      <div className="flex md:hidden ">
         <IconMenu
           handleMenuClick={handleMenuClick}
+          
         />
       </div>
 
@@ -46,7 +49,7 @@ const NavBar = () => {
           links.map((l) => (
             <a
               onClick={() => setMenuOpen(false)}
-              className=" max-w-max font-semibold text-primario text-xl lg:text-2xl py-3 hover:cursor-pointer hover:scale-110 transition-all delay-100 duration-200 ease-in-out uppercase mx-5 "
+              className=" max-w-max font-semibold text-primario text-xl lg:text-2xl  hover:cursor-pointer hover:scale-110 transition-all delay-100 duration-200 ease-in-out uppercase ml-3 lg:mx-3 xl:mx-5 "
               to={l.link}
               key={l.id}
               href="/"
@@ -61,7 +64,7 @@ const NavBar = () => {
         links.map((l) => (
           <a
             onClick={() => setMenuOpen(false)}
-            className="max-w-max text-primario text-3xl text-left my-5 hover:cursor-pointer hover:scale-110 hover:transition-all duration-300 uppercase "
+            className="max-w-max text-primario text-3xl text-left hover:cursor-pointer hover:scale-110 transition-all delay-100 duration-200 uppercase py-10 "
             to={l.link}
             key={l.id}
             href="/"
