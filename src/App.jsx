@@ -1,20 +1,21 @@
-import { SpeedInsights } from "@vercel/speed-insights/react"
-import NavBar from "./components/NavBar"
-import { SeccionDivisas } from "./components/SeccionDivisas"
-import { Analytics } from '@vercel/analytics/react';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import HomePage from './components/HomePage';
+import Calculadora from './components/Calculadora';
 
 function App() {
   return (
-    <main className=" min-h-dvh min-w-full bg-[#EEF5FF]">
-    <SpeedInsights/>
-    <Analytics />
-    <h1 className="hidden">
-    Cotización del Dólar y Euro en Tiempo Real - Argentina
-    </h1>
-    <NavBar />
-    <SeccionDivisas />
-    </main>
-  )
+    <Router>
+      <>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/calculadora" element={<Calculadora />} />
+        </Routes>
+      </>
+    </Router>
+  );
 }
 
-export default App
+export default App;
