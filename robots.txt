@@ -1,0 +1,28 @@
+# Archivo robots.txt para https://dolarhoyargentina.vercel.app/
+# Creado por Matias Bruno, Desarrollador Web
+
+# Definir reglas de acceso para los rastreadores de motores de búsqueda
+
+User-agent: *
+ # Restringir el acceso a la carpeta de administración
+ Disallow: /admin/ 
+ # Restringir el acceso a información privada                 
+Disallow: /private/            
+ # Restringir el acceso a archivos temporales     
+Disallow: /temp/       
+ # Restringir el acceso a scripts CGI              
+Disallow: /cgi-bin/                
+
+# Permitir acceso a las siguientes ubicaciones
+
+Allow: /                               
+Allow: /blog/                          
+Allow: /news/                          
+
+# Especificar la ubicación del sitemap
+
+Sitemap: https://dolarhoyargentina.vercel.app/sitemap.xml
+
+# Especificar la ubicación del archivo de reglas de acceso personalizadas
+
+#Include: /robots_custom.txt
