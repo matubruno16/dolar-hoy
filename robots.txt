@@ -4,14 +4,11 @@
 # Definir reglas de acceso para los rastreadores de motores de búsqueda
 
 User-agent: *
- # Restringir el acceso a la carpeta de administración
+ 
  Disallow: /admin/ 
- # Restringir el acceso a información privada                 
-Disallow: /private/            
- # Restringir el acceso a archivos temporales     
-Disallow: /temp/       
- # Restringir el acceso a scripts CGI              
-Disallow: /cgi-bin/                
+ Disallow: /private/           
+ Disallow: /temp/               
+ Disallow: /cgi-bin/                
 
 # Permitir acceso a las siguientes ubicaciones
 
@@ -26,3 +23,5 @@ Sitemap: https://dolarhoyargentina.vercel.app/sitemap.xml
 # Especificar la ubicación del archivo de reglas de acceso personalizadas
 
 #Include: /robots_custom.txt
+
+Host: https://dolarhoyargentina.vercel.app/
