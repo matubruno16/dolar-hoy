@@ -11,11 +11,10 @@ function App() {
         <NavBar />
         <Routes>
           <Route 
-            path="/" 
-            
+            path=""             
             element={<HomePage />} />
           <Route 
-            path="/calculadora" 
+            path="calculadora" 
             element={<Calculadora />} />
         </Routes>
       </>

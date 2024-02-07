@@ -53,7 +53,7 @@ const NavBar = () => {
         >Cotizaciones
         </Link>
         <Link
-          to="/calculadora"
+          to="calculadora"
           title="calculadora"
           onClick={() => setMenuOpen(false)}
           className={`${isMenuOpen ? classLinkIsOpen : classLinkNotOpen}`}
