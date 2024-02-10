@@ -1,24 +1,24 @@
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HomePage from './components/HomePage';
 import Calculadora from './components/Calculadora';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <Router>
-      <>
-        <NavBar />
-        <Routes>
-          <Route 
-            path="/" 
-            element={<HomePage />} />
-          <Route 
-            path="/calculadora" 
-            element={<Calculadora />} />
-        </Routes>
-      </>
-    </Router>
+    <BrowserRouter >
+      <NavBar />
+      <Routes>
+        <Route
+          path="/"
+          element={<HomePage />} />
+        <Route
+          path="/calculadora"
+          element={<Calculadora />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

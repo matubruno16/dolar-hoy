@@ -58,7 +58,7 @@ const Calculadora = () => {
   
 
   return (
-    <main className='min-h-dvh min-w-full bg-[#EEF5FF]'>
+    <main className=' h-screen min-w-full bg-[#EEF5FF]'>
       {loading && <h2>Cargando...</h2>}
       {error && <p>Error al cargar los datos: {error.message}</p>}
 
@@ -120,8 +120,6 @@ const Calculadora = () => {
             <p className="text-lg">{resultado}</p>
           </div>
         )}
-
-
       </section>
     </main>
   );
